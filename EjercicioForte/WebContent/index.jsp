@@ -27,7 +27,7 @@
 		 			
 					<div class="absolute-center" >
 						<h3 style="font-weight: bold;"class="text-login">Forte</h3>
-						<br><br>
+						<br>
 <!-- 						<form id="formLogin" class="" name="formLogin" -->
 <!-- 							action="./login" method="post"> -->
 							<div class="form-group">	
@@ -38,8 +38,7 @@
 								<label style="font-weight: bold;" class="text-login" for="pass" id="labelPass">Inserte contraseña </label>
 								<input id="pass" name="pass" style="background: transparent; text-align: center;" type="password" class="inCenter form-control" placeholder="Contraseña" value="Apply2019@pass">
 							</div>
-							<button id="entrar" class="btn" value="Entrar" title="Entrar" onclick="inicioSesion();"></button>
-<!-- 						</form> -->
+							<button id="entrar" class="btn btn-success" value="Entrar" title="" onclick="inicioSesion();" style="background: cadetblue;">Entrar</button><!-- 						</form> -->
 						<br>
 						
 <%-- 						<c:if test="${not empty param.errorLogin}"> --%>
@@ -47,7 +46,6 @@
 <!-- 								<h5 class="aviso">Error en los datos o usuario no registrado</h5> -->
 <!-- 							</div> -->
 <!-- 						</c:if> -->
-						<div class="version blanco">v1.0</div>
 					</div>			
 				</div>
   		</div>

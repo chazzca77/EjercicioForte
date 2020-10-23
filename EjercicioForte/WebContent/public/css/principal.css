@@ -1,4 +1,241 @@
-/* Contenido */
-#contenido{
-	width:100%;
+@charset "utf-8";
+/* CSS Document */
+
+.text-login{
+	font-weight: bold;
+}
+
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a img {
+	border: none;
+}
+
+
+
+a:link {
+	color:#000;
+	text-decoration: none;
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	/* max-width: 1260px;
+	min-width: 950px; */
+	background: #FFF;
+	margin: 0 auto;
+} 
+
+.header {
+	background: #CCCCCC;
+}
+
+.content {
+	padding: 0px;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px 0;
+	background: #CCCCCC;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {
+	float: right;
+	margin-left: 8px;
+}
+.fltlft {
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #4E5869;
+	}
+a{
+	text-decoration:none;
+	color:#000;
+	}
+h4{
+	margin-top:5px;
+	color:#F00;
+	}
+/*
+.formulario{
+	width:400px;
+	padding:20px 20px 60px 20px;
+	border:1px solid #000;
+	text-align:center;
+	}
+	*/
+.logueo{
+	background-image:url(../images/login/fondo_verde.jpg);
+	border-top:1px solid #4E5869;
+	border-bottom:1px solid #4E5869;
+	padding:1px 0px 5px 0px;
+}
+.txt-header{
+	float:left;
+	position:absolute;
+	padding: 10px 0px 0px 0px;
+	background: rgba(238, 238, 238, 0.15);
+	/*opacity:0.5;
+	border-top:1px solid #4E5869;*/
+	border-bottom-right-radius:10px;
+}
+.formularioLogin{
+	margin:auto;
+	padding:10px 20px 30px 20px;
+	width:560px;
+	background: rgba(255, 255, 255, 0.15);
+	border-bottom-right-radius:10px;
+	border-bottom-left-radius:10px;
+	}
+.col1{
+	width:380px;
+	text-align:right;
+	float:left;
+	opacity:1;
+	}
+.itemFormulario{
+	display:inline-block;
+	}
+.itemFormulario_hidden{
+	display:none;
+	}
+.txtFormulario{
+	width:150px;
+}
+.version{
+	padding-right:10px;
+	text-align:right;
+}
+.blanco{
+	color:#FFF;
+}
+.aviso{
+	margin:0px;
+	color:#F00;
+	padding:8px 0px 8px 0px;
+	background-color:#EEE;
+	font-weight:bold;
+	text-align:center;
+	height:auto;
+	}
+/*
+.col1{
+	width:250px;
+	text-align:right;
+	float:left;
+	}
+.itemFormulario{
+	display:inline-block;
+	}
+
+
+	
+#aviso{
+	padding:10px 0px 10px 0px;
+	background-color:#666;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	width:490px;
+	height:auto;
+	}
+*/
+#logo_preloader{
+	padding-top:20px;
+	}
+	
+	
+
+/*CSS Chazz*/
+
+  .imagen-fondo {
+  width:100%;
+  height: 100vh; 
+  min-height:900px; 
+  overflow-y:auto; 
+  background-color:white; 
+  background: url("../imagenes/fallback.png") no-repeat center center fixed;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  align-content: center;
+  }
+  
+  
+.absolute-center {
+    background: rgba(255,255,255,0.6);
+    margin-top: 35%; 
+    margin-bottom: 35%;
+    margin-right: 5%;
+    margin-left: 5%; 
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+body{
+    height: 100%;
+    background: white;
+    overflow:hidden;
+}
+  
+#entrar{
+	    width: 40%;
+}
+  
+
+ @media  (min-width: 1201px) {
+
+    .absolute-center {
+        background: rgba(255,255,255,0.6);
+        margin-top: 13%; 
+        margin-bottom: 20%;
+        margin-right: 35%;
+        margin-left: 35%; 
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+
+.inCenter{
+	text-align:center;
 }

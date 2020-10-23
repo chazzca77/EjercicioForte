@@ -13,17 +13,30 @@
     
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Forte</title>
-<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com
 
-/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="public/css/principal.css" />
-<script type="text/javascript" src="public/js/jquery-1.9.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css" rel="stylesheet"/>
+
+
+<link rel="stylesheet" href="public/css/dataTables.bootstrap.min.css">
+<!--  <script type="text/javascript" src="public/js/jquery-1.9.1.js"></script> -->
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 <script type="text/javascript" src="public/js/Principal/principal.js"></script>
+	
+<link type="text/css" rel="stylesheet" href="public/css/principal.css" />
 
-    <link type="text/css" rel="stylesheet" href="public/css/dataTables.bootstrap.min.css" />
     
     </head>
     <body>
@@ -32,35 +45,23 @@
 <%--         <label id="nivelIdtxt">${user.nivel}</label> --%>
 <%--         <label id="coordinadorIdtxt">${user.coordinador}</label> --%>
         
-    <div id="contenido">
+    <div id="contenido"  class="imagen-fondo" >
          
-	    <div class="main" style="padding-right: 0px; padding-left: 0px;">
+	    <div style="padding-right: 0px; padding-left: 0px;">
 	 
 	
-			<div class="row">
-			  <div class="col-md-offset-10 col-md-2 col-xs-offset-9 col-xs-3">
-			  	<div class="col-md-offset-5" onclick="" align="right" id="mySidenav" class="sidenav" style="margin-right:10px; position: absolute; z-index: 1;">
-	                 <img style="background-size: cover; width: 80%;" class="img-preview" src="../images/phonebook.png" >
-	                 
-				</div>
-			  </div>
-			</div>	
-	
-	
-			<div class="col-md-10" style="margin-top: 30px;">	
-				<div class="row">
-					<center>
-						<button class="btn" style="background-color: #018179; color: white;" onclick="agregarCliente();">Agregar cliente</button>
-					</center>
+			<div class="col-md-9 col-md-offset-1" style="margin-top: 30px; background:white">	
+				<div class="row" style="    text-align: right; background:white"">
+					<button class="btn" style="background-color: #018179; color: white;" onclick="agregarCliente();">Agregar cliente</button>
 				</div>
 			
 	  		</div>
 	
-			<div class="col-md-11" style="margin-top: 10px;">
+			<div class="col-md-9 col-md-offset-1" style="background:white;">
 				<p id="resultado">
 			</div>
 	
-	  		<div class="col-md-9 col-md-offset-1" style="margin-top: 0px">
+	  		<div class="col-md-9 col-md-offset-1" style="margin-top: 0px; background:white">
 				<p id="resulterror"/>
 				<table class="table table-striped" id="tabla_clientes">
 			  	<thead style="background-color: #018179;color: white;">
@@ -120,8 +121,8 @@
 						  	<div class="form-group">
 							    <label class="control-label col-sm-3" for="">Estatus persona:</label>
 						     	 <select class="form-control" id="selectTipoE" name="selectTipoE">
-									  <option class="form-control" value="ACTIVO">ACTIVO</option>
-								  	  <option class="form-control" value="INACTIVO">INACTIVO</option>
+									  <option class="form-control" value="1">ACTIVO</option>
+								  	  <option class="form-control" value="0">INACTIVO</option>
 									  
 								</select>
 							</div>	
@@ -152,11 +153,6 @@
             
     </body>
 
- 	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-         <script src="public/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="public/js/jquery.dataTables.min.js" type="text/javascript"></script>
  	<script src="public/js/dataTables.bootstrap.min.js" type="text/javascript"></script> 
 </html>
